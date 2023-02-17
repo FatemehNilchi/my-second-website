@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Rubik", sans-serif;
 }
 /* header styles */
 .header {
@@ -10,6 +11,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 .logo img {
@@ -49,4 +52,126 @@
   display: flex;
   justify-content: left;
   align-items: center;
+}
+
+/* hero style */
+.hero-section {
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./images/hero-sky.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section .content {
+  color: rgb(233, 233, 233);
+  width: 400px;
+  line-height: 30px;
+  padding-bottom: 0px;
+}
+
+.hero-section .content > h1 {
+  padding-bottom: 10px;
+}
+
+.button > button {
+  background-color: rgb(233, 233, 233);
+  color: rgb(42, 42, 86);
+  font-size: 22px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 9px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.button > button:hover {
+  color: rgb(233, 233, 233);
+  background-color: rgb(42, 42, 86);
+  cursor: pointer;
+}
+
+/* cards style */
+section.cards-section {
+  background-color: #15141b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22.5px 45px;
+}
+
+.cards {
+  width: 7rem;
+  height: auto;
+  color: #322766;
+  text-align: center;
+  padding: 22.5px 45px;
+  margin: 20px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 2%;
+}
+
+.cards img {
+  width: 50px;
+  height: auto;
+}
+
+/* footer style */
+
+.main-footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(42, 42, 86);
+  padding-top: 20px;
+}
+
+.main-footer-right {
+  width: 30%;
+  height: auto;
+  float: left;
+  padding: 15px;
+}
+
+.main-footer-card h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.main-footer-card p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #fff;
+}
+
+.main-footer-left {
+  width: 50%;
+  height: auto;
+  float: left;
+  padding: 15px;
+  margin-left: 50px;
+}
+.main-footer-left li {
+  color: #fff;
+  margin: 30px;
+  list-style-type: none;
+  font-size: 14px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+}
+.main-footer-left img {
+  max-width: 30px;
+  float: left;
+  margin: 0 10px 0 0;
+  border-radius: 50px;
+}
+
+#email {
+  color: #5a8ce9;
 }
